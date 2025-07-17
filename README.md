@@ -24,7 +24,6 @@ This section features practical experience with **Tenable Nessus Essentials**, a
 - **Report (Spanish):** [`reporte_vulnerabilidad_nodejs.md`](./Nessus/reporte_vulnerabilidad_nodejs.md)
 - **Report (English):** [`vulnerability_report_nodejs_en.md`](./Nessus/vulnerability_report_nodejs_en.md)
     *(Located in the `Nessus/` folder)*
-
 ---
 
 ### Threat Emulation Report - Red Team Atomic (Compensatory Project)
