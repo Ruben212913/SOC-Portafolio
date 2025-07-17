@@ -33,7 +33,7 @@ This section documents a comprehensive threat emulation exercise. Conducted as a
 **Project Focus:**
 This project delves into the practical application of **MITRE ATT&CK®** tactics, specifically:
 * **TA0001 - Initial Access**: Exploring methods an adversary might use to gain initial entry into a system.
-* **T1059 - Command and Scripting Interpreter**: Simulating the execution of commands and scripts by an attacker for various malicious purposes.
+* **T1059 - Intérprete de Comandos y Scripts (Command and Scripting Interpreter)**: Simulating the execution of commands and scripts by an attacker for various malicious purposes.
 * **T1566 - Phishing**: Emulating a phishing attempt as a common initial access vector to compromise user credentials or trigger malware execution.
 
 The project also features a **threat hunting** component, utilizing **PowerShell** for active querying and **Windows Event Viewer (Event Logs)** for forensic analysis to search for indicators of compromise (IOCs).
