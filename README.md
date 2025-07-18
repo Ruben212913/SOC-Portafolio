@@ -21,7 +21,7 @@ This section features practical experience with **Tenable Nessus Essentials**, a
 
 #### Node.js Outdated Version Vulnerability (Critical)
 - **Description:** A comprehensive report on a critical vulnerability identified in an outdated Node.js version running on a Kali Linux virtual machine. This report details the vulnerability's nature, its potential impact, and the recommended solutions to mitigate the risk.
-- **Report (Spanish):** [`reporte_vulnerabilidad_nodejs.md`](./Nessus/reporte_vulnerabilidad_nodejs.md)
+- **Report (Spanish):** [Ver Reporte en Español](./Nessus/reporte_vulnerabilidad_nodejs.md)
 - **Report (English):** [`vulnerability_report_nodejs_en.md`](./Nessus/vulnerability_report_nodejs_en.md)
     *(Located in the `Nessus/` folder)*
 ---
