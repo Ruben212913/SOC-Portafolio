@@ -60,21 +60,10 @@ sudo apt update && sudo apt upgrade nodejs
 (Nota: Para Node.js, a menudo se usan herramientas como nvm o el gestor de paquetes propio de Node.js para actualizaciones más finas, pero apt upgrade intentará obtener la última versión disponible en los repositorios de Kali).
 
 
-###
+---
 
+### 5. Verificación de la Remediación
 
-5. Verificación
+Después de aplicar las recomendaciones de remediación propuestas, un paso crítico es la verificación de la efectividad de la solución. Esto se lograría realizando un **nuevo escaneo de vulnerabilidades con Nessus** sobre el sistema afectado (IP 10.0.2.15).
 
-
-
-Después de aplicar la remediación, se debería realizar un nuevo escaneo de Nessus sobre la IP 10.0.2.15 para confirmar que la vulnerabilidad de Node.js ya no es detectada, validando así la efectividad de la solución.
-
-¡Felicidades! Con esto tienes una entrada sólida para tu portafolio de analista SOC, demostrando tu capacidad para:
-
-Utilizar un escáner de vulnerabilidades (Nessus).
-
-Interpretar sus resultados (identificar la severidad y el tipo de vulnerabilidad).
-
-Comprender el impacto potencial.
-
-Proponer soluciones de remediación basadas en las recomendaciones del escáner.
+El objetivo de este re-escaneo es confirmar que la vulnerabilidad de la versión desactualizada de Node.js ya no es detectada por el escáner. Una vez confirmado que la vulnerabilidad ha desaparecido de los resultados del nuevo escaneo, la remediación puede considerarse exitosa y la vulnerabilidad como cerrada.
