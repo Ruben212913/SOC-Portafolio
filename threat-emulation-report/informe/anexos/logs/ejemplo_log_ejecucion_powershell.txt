@@ -1,0 +1,40 @@
+# Ejemplo de Eventos de Creación de Proceso y Script Block Logging (ID 4688 y 4104)
+# Estos logs simulan la actividad esperada tras la ejecucion de PowerShell por un adversario.
+#--------------------------------------------------------------------------------------------------
+
+LogName:        Security
+Source:         Microsoft-Windows-Security-Auditing
+Date:           2025-07-18 16:05:00 PM
+EventID:        4688
+Task Category:  Process Creation
+Keywords:       Audit Success
+User:           WIN-LAB\tempuser
+Computer:       WIN-LAB.contoso.local
+Description:    A new process has been created.
+Subject:
+    Security ID:        S-1-5-21-XXX-XXX-XXX-1001 (tempuser)
+    Account Name:       tempuser
+    Account Domain:     WIN-LAB
+    Logon ID:           0x12345
+New Process:
+    New Process Name:   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+    Creator Process ID: 1234
+    Process Command Line:   "powershell.exe" -EncodedCommand JABUAGUAcwB0ACAAPQAgACcATQB5ACAAVABlAHMAdAAgAFMAaQBuAGcAIABJAG4AJwA7AAoAVwByAGkAdABlAC0ASABvAHMAdAAgACIAQQAgAHMAaQBtAHUAbABhAHQAZQBkACAAYgBhAGMAdwBvAG4AIABpAHMAIABkAGUAdABlAGMAdABlAGQAIQAgACQAVABlAHMAdAAiAAoA
+    Token Elevation Type:   TokenElevationTypeDefault
+    ... (otros atributos) ...
+
+#--------------------------------------------------------------------------------------------------
+
+LogName:        Microsoft-Windows-PowerShell/Operational
+Source:         Microsoft-Windows-PowerShell
+Date:           2025-07-18 16:05:01 PM
+EventID:        4104
+Task Category:  Execute Pipeline
+Keywords:       None
+User:           WIN-LAB\tempuser
+Computer:       WIN-LAB.contoso.local
+Description:    Script Block Logging
+Script Block Text:
+$Test = 'My Test Sing In';
+Write-Host "A simulated bacwon is detected! $Test"
+... (otros atributos, incluyendo hash) ...

@@ -1,0 +1,17 @@
+# Explicación Conceptual de Capturas de Pantalla para Anexos
+
+Esta carpeta contendría capturas de pantalla relevantes para documentar visualmente el ejercicio de emulación de amenazas y cacería (threat hunting) si se hubiera realizado en un entorno práctico.
+
+Las capturas de pantalla son cruciales para:
+- **Evidencia Visual de Ejecución:** Mostrar los comandos o scripts siendo ejecutados en la línea de comandos o PowerShell.
+- **Validación de Hallazgos:** Capturas del Visor de Eventos de Windows resaltando Event IDs específicos, o de la salida de scripts de PowerShell de cacería que identificaron actividad anómala.
+- **Contexto del Sistema:** Mostrar configuraciones relevantes del sistema, procesos inusuales en el Administrador de Tareas, o cambios en el sistema de archivos.
+
+Ejemplos conceptuales de capturas de pantalla incluirían:
+- Ejecución de 'net user' o 'net localgroup' en la línea de comandos.
+- Eventos 4720 y 4732 en el Visor de Eventos, mostrando la creación de un nuevo usuario.
+- Ejecución de 'powershell.exe' con parámetros sospechosos desde la línea de comandos.
+- Eventos 4688 (Process Creation) o 4104 (PowerShell Script Block Logging) en el Visor de Eventos.
+- Simulación de la apertura de un documento o archivo malicioso.
+
+Aunque este proyecto es de naturaleza teórica, la inclusión de esta explicación subraya la importancia de la evidencia visual en la documentación de incidentes y la validación de la cacería de amenazas.

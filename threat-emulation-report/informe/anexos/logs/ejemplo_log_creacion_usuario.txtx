@@ -1,0 +1,53 @@
+# Ejemplo de Eventos de Creación de Usuario y Adición a Grupo (ID 4720 y 4732)
+# Estos logs simulan la actividad esperada tras la creacion de un usuario local privilegiado.
+#--------------------------------------------------------------------------------------------------
+
+LogName:        Security
+Source:         Microsoft-Windows-Security-Auditing
+Date:           2025-07-18 16:00:00 PM
+EventID:        4720
+Task Category:  User Account Management
+Keywords:       Audit Success
+User:           N/A
+Computer:       WIN-LAB.contoso.local
+Description:    A user account was created.
+Subject:
+    Security ID:        S-1-5-21-XXX-XXX-XXX-500  (SYSTEM)
+    Account Name:       SYSTEM
+    Account Domain:     NT AUTHORITY
+    Logon ID:           0x3E7
+New Account:
+    Security ID:        S-1-5-21-XXX-XXX-XXX-1001 (tempuser)
+    Account Name:       tempuser
+    Account Domain:     WIN-LAB
+    SAM Account Name:   tempuser
+Attributes:
+    SAM Account Name:   tempuser
+    Display Name:       -
+    User Principal Name:    -
+    ... (otros atributos) ...
+
+#--------------------------------------------------------------------------------------------------
+
+LogName:        Security
+Source:         Microsoft-Windows-Security-Auditing
+Date:           2025-07-18 16:00:05 PM
+EventID:        4732
+Task Category:  Security Group Management
+Keywords:       Audit Success
+User:           N/A
+Computer:       WIN-LAB.contoso.local
+Description:    A member was added to a security-enabled local group.
+Subject:
+    Security ID:        S-1-5-21-XXX-XXX-XXX-500  (SYSTEM)
+    Account Name:       SYSTEM
+    Account Domain:     NT AUTHORITY
+    Logon ID:           0x3E7
+Member:
+    Security ID:        S-1-5-21-XXX-XXX-XXX-1001 (tempuser)
+    Account Name:       tempuser
+Group:
+    Security ID:        S-1-5-32-544 (Administrators)
+    Group Name:         Administrators
+    Group Domain:       Builtin
+... (otros atributos) ...
