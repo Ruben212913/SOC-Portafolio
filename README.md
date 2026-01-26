@@ -44,7 +44,17 @@ Uso de **Atomic Red Team** para simular comportamientos maliciosos y validar con
 ## 📂 Estructura del Laboratorio
 * **[Semana 1-2](./Semana1):** Fundamentos, Bandit (OverTheWire) y Análisis de Logs.
 * **[Semana 3-4](./Semana_3):** Forense, Análisis de Malware y Vulnerabilidades (Nessus).
-* **[Semana 5+](./Network-Pentest):** Desarrollo de Herramientas de Auditoría Propias.
+* **[Semana 5+](./Network-Pentest):** Desarrollo de Herramientas de Auditoría 
 
 ---
-📫 **Contacto:** [T o Email]
+
+## 📫 Contacto / Contact Me
+
+¡Conectemos! Estoy abierto a nuevas oportunidades, aprendizaje continuo y colaboraciones en proyectos de Ciberseguridad y Redes.
+
+* **LinkedIn:** [Rubén Rodríguez Román](https://www.linkedin.com/in/ruben-rodriguez-roman-814a553a5/)
+* **GitHub Portafolio:** [Ruben212913/SOC-Portafolio](https://github.com/Ruben212913/SOC-Portafolio)
+* **Email:** [redmotocross06@gmail.com](mailto:redmotocross06@gmail.com)
+
+---
+*Este proyecto forma parte de mi formación continua hacia el rol de SOC Analyst.*
