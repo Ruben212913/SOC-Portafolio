@@ -1,32 +1,50 @@
-# 🚀 Portafolio de SOC Analyst L1: Rubén Rodríguez Román
+# 🛡️ Portafolio de Ciberseguridad & SOC Analyst | Rubén Rodríguez Román
 
-Este portafolio es una colección de proyectos prácticos y desafíos técnicos completados durante un programa intensivo de **28 días**, diseñado para desarrollar y solidificar las habilidades fundamentales de un **Analista de Centro de Operaciones de Seguridad (SOC) Nivel 1**.
-
----
-
-## Habilidades Clave Demostradas
-
-A lo largo de este programa, he cultivado y reforzado las siguientes habilidades esenciales para un rol de SOC Analyst L1:
-
-* **Análisis de Logs y Detección (SIEM):** Uso avanzado de **Splunk** para ingesta, correlación, búsqueda y visualización de logs de seguridad.
-* **Análisis de Malware (Estático y Dinámico):** Uso de **YARA** para la creación de reglas y análisis de comportamiento en **Cuckoo Sandbox**.
-* **Análisis Forense de Memoria (DFIR):** Utilización de **Volatility Framework** para identificar procesos ocultos, conexiones C2 e inyección de código (T1055).
-* **Respuesta a Incidentes (IR):** Aplicación de metodologías de IR y mapeo de incidentes a **MITRE ATT&CK**.
-* **Documentación y Comunicación:** Creación de documentación técnica (`README.md`, reportes forenses) clara y concisa.
-* **Resolución de Problemas y Resiliencia:** Superación de desafíos técnicos (ej., problemas de compatibilidad de dependencias), demostrando persistencia.
+Este repositorio documenta mi trayectoria técnica y laboratorios prácticos enfocados en **Defensa, Detección y Respuesta ante Incidentes**. Mi enfoque combina el conocimiento sólido de redes (CCNA) con la automatización en Python y el análisis forense.
 
 ---
 
-## Proyectos Destacados
+## 🚀 Proyectos de Ingeniería de Seguridad (Destacados)
 
-* **Creación de Dashboards y Alertas en Splunk:** Desarrollo de un panel de control interactivo para monitorear eventos de seguridad.
-* **Análisis de Malware Avanzado:** Investigación de binarios maliciosos, extracción de IoCs.
-* **Análisis Forense de Memoria con Volatility:** Un proyecto integral que simula una respuesta a incidentes, desde la identificación de la infección hasta la caracterización completa del malware.
+### [Network-Pentest Suite (Python/Scapy)](./Network-Pentest)
+Desarrollo de herramientas propias para auditoría de red y reconocimiento automatizado.
+* **Turbo Scanner:** Escaneo multihilo (ThreadPoolExecutor) de alta velocidad.
+* **Inteligencia MITRE:** Mapeo automático de puertos abiertos a técnicas **MITRE ATT&CK** (T1110, T1210).
+* **Evidencia Visual:** Integración de **Playwright** para capturas automáticas de servicios web expuestos.
+* **Reportes Profesionales:** Generación automática de auditorías en **PDF**.
+
+---
+
+## 🛡️ Especialización SOC & Respuesta a Incidentes
+
+### [Análisis Forense de Memoria (DFIR)](./Semana_4/Volatility-Analysis)
+Investigación profunda de intrusiones mediante **Volatility Framework**.
+* Análisis de artefactos de memoria para detectar inyecciones de código y procesos ocultos.
+* Identificación de comunicaciones C2 (Comando y Control).
+
+### [Monitoreo y SIEM (Splunk)](./Semana_4/Splunk-Dashboard)
+Creación de Dashboards operativos para la detección temprana de amenazas.
+* Visualización de ataques de fuerza bruta y escaneos de red.
+* Correlación de eventos de seguridad para la reducción de falsos positivos.
+
+### [Emulación de Adversarios (Threat Hunting)](./threat-emulation-report)
+Uso de **Atomic Red Team** para simular comportamientos maliciosos y validar controles de seguridad.
+* Ejecución de scripts de simulación y análisis de logs generados (auth_log, sysmon).
 
 ---
 
-## Reflexión Final
-
-Me siento preparado para aplicar estas habilidades en un entorno profesional de SOC Nivel 1, contribuyendo activamente a la detección temprana y la respuesta eficaz ante las amenazas cibernéticas. Mi objetivo es continuar aprendiendo y creciendo, defendiendo el panorama digital con dedicación y conocimiento.
+## 🛠️ Stack Tecnológico
+* **Lenguajes:** Python (Scapy, Playwright, Requests), Bash Scripting.
+* **Herramientas SOC:** Splunk, VirusTotal API, Nessus, Wireshark.
+* **Forense:** Volatility, YARA.
+* **Redes:** Cisco CCNA (En proceso), Nmap.
 
 ---
+
+## 📂 Estructura del Laboratorio
+* **[Semana 1-2](./Semana1):** Fundamentos, Bandit (OverTheWire) y Análisis de Logs.
+* **[Semana 3-4](./Semana_3):** Forense, Análisis de Malware y Vulnerabilidades (Nessus).
+* **[Semana 5+](./Network-Pentest):** Desarrollo de Herramientas de Auditoría Propias.
+
+---
+📫 **Contacto:** [T o Email]
