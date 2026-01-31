@@ -11,17 +11,32 @@ def calculate_sha256(file_path):
     except Exception as e:
         return f"Error: {e}"
 
-if __name__ == "__main__":
-    print("--- 🔐 SOC Hash Integrity Tool ---")
+def verify_integrity():
+    print("\n" + "="*40)
+    print("🛡️  SOC FILE INTEGRITY VERIFIER  🛡️")
+    print("="*40)
     
-    # ESTE ES EL INPUT QUE MENCIONAS:
-    ruta_archivo = input("\n[?] Arrastra el archivo aquí o escribe su ruta: ")
+    ruta = input("\n[?] Introduce la ruta del archivo: ").strip().replace("'", "").replace('"', "")
     
-    # Limpiamos las comillas por si el usuario arrastró el archivo a la terminal
-    ruta_archivo = ruta_archivo.replace("'", "").replace('"', "").strip()
-
-    if os.path.isfile(ruta_archivo):
-        hash_result = calculate_sha256(ruta_archivo)
-        print(f"\n[+] SHA-256: {hash_result}")
+    if os.path.isfile(ruta):
+        current_hash = calculate_sha256(ruta)
+        print(f"\n[+] Hash SHA-256 actual: \n👉 {current_hash}")
+        
+        # Nueva funcionalidad de comparación
+        check = input("\n[?] ¿Tienes un hash de referencia para comparar? (s/n): ").lower()
+        
+        if check == 's':
+            original_hash = input("[?] Pega el hash original: ").strip()
+            
+            if current_hash == original_hash:
+                print("\n✅ [INTEGRIDAD CONFIRMADA]: El archivo no ha sido modificado.")
+            else:
+                print("\n❌ [ALERTA DE SEGURIDAD]: Los hashes no coinciden. El archivo podría estar corrupto o manipulado.")
+        else:
+            print("\n[*] Guarda este hash para futuras verificaciones.")
+            
     else:
-        print("[!] Error: No se encontró el archivo. Revisa la ruta.")
+        print("\n[!] Error: No se pudo encontrar el archivo.")
+
+if __name__ == "__main__":
+    verify_integrity()
